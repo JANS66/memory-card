@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CardGrid from "./components/CardGrid";
 import Scoreboard from "./components/Scoreboard";
-import "./styles/App.css";
+import "./styles/app.css";
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);

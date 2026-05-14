@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../styles/cardGrid.css";
 
 // Fisher Yates Shuffle Algorithm
 const shuffleArray = (array) => {
