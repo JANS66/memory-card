@@ -1,16 +1,74 @@
-# React + Vite
+# Memory Quest: Pokemon Edition
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast-paced memory card game built with React and Vite. Test your memory by clicking on unique Pokemon cards—but be careful! If you click the same Pokemon twice, your score resets.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[\[Netlify\]](https://inspect-memory-game.netlify.app/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Dynamic Data:** Fetches real-time Pokemon data and sprites from the PokeAPI.
+- **Shuffle Logic:** Uses the Fisher-Yates shuffle algorithm to randomize card positions after every click.
+- **Score Tracking:** Tracks your current session score and saves your "Best Score" across multiple attempts.
+- **Modern UI:** Features a dark-mode "Gamer" aesthetic with frosted glass effects and neon accents.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Built With
+
+| Technology | Purpose                                     |
+| ---------- | ------------------------------------------- |
+| React 19   | UI Library                                  |
+| Vite       | Build Tool and Development Server           |
+| CSS3       | Custom styling (no external CSS frameworks) |
+| PokeAPI    | REST API for Pokemon data                   |
+
+---
+
+## 🚀 Installation and Setup
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/JANS66/memory-card
+   ```
+
+2. **Navigate to the project folder:**
+
+   ```bash
+   cd memory-card
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+|-- components/
+|   |-- CardGrid.jsx       (Handles API fetching and shuffling)
+|   |-- Scoreboard.jsx     (Displays current and best scores)
+|-- styles/
+|   |-- app.css            (Global layout and animations)
+|   |-- cardGrid.css
+|   |-- index.css
+|   |-- scoreboard.css
+|-- App.jsx                (Main logic and state management)
+|-- main.jsx               (Entry point)
+```
+
+---
